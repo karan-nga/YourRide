@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
-        <variable
-            name="model"
-            type="com.rawtooth.yourride.model.ridemodel.RidesModelItem" />
-    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/item_v1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp"
+
         android:background="@drawable/item_back"
         android:layout_marginEnd="20dp">
 
@@ -23,6 +19,7 @@
             android:layout_height="148dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="24dp"
+            android:scaleType="fitXY"
             android:layout_marginEnd="27dp"
             app:layout_constraintEnd_toEndOf="@id/item_v1"
             app:layout_constraintStart_toStartOf="@id/item_v1"
@@ -35,7 +32,7 @@
             android:layout_marginStart="27dp"
             android:layout_marginTop="17dp"
             android:background="#000000"
-            android:text="@{model.city}"
+            android:text=" "
             android:textSize="12sp"
             android:textColor="@color/white"
             android:padding="4dp"
@@ -49,7 +46,7 @@
             android:layout_marginTop="17dp"
             android:layout_marginEnd="27dp"
             android:background="#000000"
-            android:text="@{model.state}"
+            android:text=""
             android:textSize="12sp"
             android:padding="4dp"
             android:textColor="@color/white"
@@ -81,7 +78,7 @@
                 android:id="@+id/origin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Origin Station : 20"
+                android:text=""
                 android:textColor="@color/white"
                 android:layout_marginBottom="12dp"
                 android:textSize="18sp" />
@@ -90,7 +87,7 @@
                 android:id="@+id/path"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="station_path : [20, 39, 40, 42, 54, 63, 72, 88, 98]"
+                android:text=""
                 android:textColor="@color/white"
                 android:layout_marginBottom="12dp"
                 android:textSize="18sp" />
@@ -99,7 +96,7 @@
                 android:id="@+id/time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date : 15th Feb 2022 16:33"
+                android:text=""
                 android:textColor="@color/white"
                 android:layout_marginBottom="12dp"
                 android:textSize="18sp" />
@@ -108,7 +105,7 @@
                 android:id="@+id/distance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Distance : 0"
+                android:text=""
                 android:textColor="@color/white"
                 android:layout_marginBottom="12dp"
                 android:textSize="18sp" />
@@ -117,4 +114,3 @@
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>

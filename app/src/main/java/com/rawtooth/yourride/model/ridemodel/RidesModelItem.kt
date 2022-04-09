@@ -35,6 +35,8 @@ data class RidesModelItem(
 
     override fun compareTo(other: RidesModelItem): Int {
         return difference-other.difference
+
     }
+
 }
 

@@ -27,14 +27,14 @@ class Adapter(val context:Context):RecyclerView.Adapter<Adapter.rideViewAdapter>
     override fun onBindViewHolder(holder: rideViewAdapter, position: Int) {
         val article= rideList?.get(position)
         if (article != null) {
-            holder.id.text=article.id.toString()
+            holder.id.text="Ride id: "+article.id.toString()
             holder.city.text=article.city
             holder.state.text=article.state
-            holder.distance.text= article.difference.toString()
+            holder.distance.text= "Distance: "+article.difference.toString()
             Glide.with(context).load(article.map_url).into(holder.image)
-            holder.path.text=article.station_path.toString()
-            holder.time.text=article.date
-            holder.origin.text=article.origin_station_code.toString()
+            holder.path.text="Station path: "+article.station_path.toString()
+            holder.time.text="Date: "+article.date
+            holder.origin.text="Origin: "+article.origin_station_code.toString()
         }
     }
 

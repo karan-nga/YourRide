@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginEnd="19.85dp"
         android:layout_marginTop="23dp"
-   android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/ic_launcher"
         android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toBottomOf="@id/toolbar" />
     <TextView
@@ -38,7 +38,7 @@
         android:layout_marginEnd="54dp"
         android:layout_marginTop="26dp"
         android:layout_marginBottom="25dp"
-        android:text="Dhruv Singh"
+        android:text=""
         android:textSize="16sp"
         android:textColor="@color/white"/>
 
